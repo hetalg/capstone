@@ -8,7 +8,7 @@ Random forest and models need a ground truth to do correct classification .
 
 This exercise helped us to set up a ground truth so that out models have higher discriminatory power to classify helpful and non helpful.
 
-# Why this project is unique 
+# Why this Project is Unique 
 The strength of this project is its generality and implementation This is more like an end to end project for any e-commerce portal, hotel booking website, music/movie recommendation service, which captures the end users feedback in a textual form apart from some sort of star rating mechanism.
 Traditionally the recommendations are driven by the explicit feedback ratings (like the 1-5 star rating) but this approach comes up with a novel approach which captures the implicit features from review text along with the actual ratings to calculate a score called average rating. 
 As already mentioned, the entire project can be split into 2 main components- 
