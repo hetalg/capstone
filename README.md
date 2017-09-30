@@ -7,3 +7,15 @@ Those reviews(no votes) are increasing information value of the base data toward
 Random forest and models need a ground truth to do correct classification .
 
 This exercise helped us to set up a ground truth so that out models have higher discriminatory power to classify helpful and non helpful.
+
+# Why this project is unique 
+The strength of this project is its generality and implementation This is more like an end to end project for any e-commerce portal, hotel booking website, music/movie recommendation service, which captures the end users feedback in a textual form apart from some sort of star rating mechanism.
+Traditionally the recommendations are driven by the explicit feedback ratings (like the 1-5 star rating) but this approach comes up with a novel approach which captures the implicit features from review text along with the actual ratings to calculate a score called average rating. 
+As already mentioned, the entire project can be split into 2 main components- 
+1) Predicting whether the review is helpful or not 
+2) Using that information to calculate the average_rating of the product/item to make product recommendations
+
+To tackle the problem of different scales for Predicted_Helpful(0-1), Review_Helpful(0-1) and overall rating(1-5), we have come up with weights which help in determining how to prioritize each of these quantities to calculate our final score. Finally a scaling logic has been used that translates the combination of these three quantities to a real number score between 1-5.
+The selection of these weights was an empirical process since there were no live users interacting with the data and no real updates to the user preferences.
+Also the data window is historical so there is always a possibility that actually the product has gone out of stock or reviews/ratings have changed since then. But after many iterations these weights were found to be giving closest recommendations that made more sense than a traditional recommendation engine when review helpfulness was also taken into account.
+I have intentionally kept the stopwords intact since by removing them the accuracy was impacted significantly and this makes practical sense since small words like not, from, for can alter the meaning for 1-gram  word vectors.
