@@ -1,2 +1,9 @@
 # capstone
 Capstone Project
+
+Introduction
+Consumer reviews are abundant in today’s e-commerce setting. Yet not all reviews are perceived equally. Some seem to be more influential than the others, and are more relevant to a user’s purchasing decision. It will be helpful to understand what constitutes a helpful review. Different from sentiment analysis, this task can be difficult even for a human agent. Two reviews may both look informative, but often one was perceived as helpful and the other was not. We would like to evaluate the performance of NLP and deep learning on such task. In our problem setting, we examine Amazon reviews data, which provides an option for helpfulness votes. If choose to, a user can upvote or downvote a review on its helpfulness. For example 3=5 would mean that three people thought the review was helpful and two thought otherwise. There might be many more who saw the review but did not express their views. We approach the problem by casting it as a classification problem. Each review is labeled as “helpful” or “unhelpful”; we then predict the labels by various algorithms. Here we will use TF-IDF based Random Forest as a baseline. In addition, we ran simple-MLP and LSTM on the data and compare the outcome.
+Those reviews(no votes) are increasing information value of the base data towards being non helpful which otherwise would have been dripped altogether from the analysis ..
+The idea of this data pre processing is taking away the preferential bias of reviews which have already been marked helpful .. Since a review once voted helpful will attract more helpful votes and one which has not been voted helpful may not attract any helpful votes altogether which may not actually be the Case.
+Random forest and models need a ground truth to do correct classification .
+This exercise helped us to set up a ground truth so that out models have higher discriminatory power to classify helpful and non helpful.
