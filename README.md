@@ -21,6 +21,6 @@ Also the data window is historical so there is always a possibility that actuall
 I have intentionally kept the stopwords intact since by removing them the accuracy was impacted significantly and this makes practical sense since small words like not, from, for can alter the meaning for 1-gram  word vectors.
 
 # Files
-review_eda.ipynb - Exploratory Data Analysis
-DL_Amazon_AMI_full_model_v5.ipynb - Full Model and Recommendation of products using average calculated rating and star rating
-amazon_cellphone_recommendation.pdf - Presentation 
+# review_eda.ipynb - Exploratory Data Analysis
+# DL_Amazon_AMI_full_model_v5.ipynb - Full Model and Recommendation of products using average calculated and star rating
+# amazon_cellphone_recommendation.pdf - Presentation 
