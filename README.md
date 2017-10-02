@@ -19,3 +19,8 @@ To tackle the problem of different scales for Predicted_Helpful(0-1), Review_Hel
 The selection of these weights was an empirical process since there were no live users interacting with the data and no real updates to the user preferences.
 Also the data window is historical so there is always a possibility that actually the product has gone out of stock or reviews/ratings have changed since then. But after many iterations these weights were found to be giving closest recommendations that made more sense than a traditional recommendation engine when review helpfulness was also taken into account.
 I have intentionally kept the stopwords intact since by removing them the accuracy was impacted significantly and this makes practical sense since small words like not, from, for can alter the meaning for 1-gram  word vectors.
+
+# Files
+review_eda.ipynb - Exploratory Data Analysis
+DL_Amazon_AMI_full_model_v5.ipynb - Full Model and Recommendation of products using average calculated rating and star rating
+amazon_cellphone_recommendation.pdf - Presentation 
